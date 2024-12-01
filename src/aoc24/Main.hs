@@ -1,11 +1,15 @@
 module Main where
 
 import Day1.Haskell.Solution (runDay1)
+import System.Environment (getArgs)
 
 main :: IO ()
 main = do
-    putStrLn "Day 1:"
-    runDay1
-    -- Future days will be added here
-    -- putStrLn "Day 2:"
-    -- runDay2
+    args <- getArgs
+    case args of
+        ["--day", "1"] -> do
+            putStrLn "Day 1:"
+            runDay1
+        ["--day", n] -> 
+            putStrLn $ "Day " ++ n ++ " not implemented yet"
+        _ -> putStrLn "Usage: cabal run aoc24 --day <day-number>"
