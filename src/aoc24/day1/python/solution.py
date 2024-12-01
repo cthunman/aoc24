@@ -2,9 +2,8 @@ def part1():
     list1 = []
     list2 = []
     with open("inputs/day1/input.txt") as f:
-        for _ in range(1000):
-            line = f.readline()
-            tokens = line.split("   ")
+        for line in f:
+            tokens = line.split()
             list1.append(int(tokens[0]))
             list2.append(int(tokens[1]))
 
@@ -20,9 +19,8 @@ def part2():
     list1 = []
     frequencies = {}
     with open("inputs/day1/input.txt") as f:
-        for _ in range(1000):
-            line = f.readline()
-            tokens = line.split("   ")
+        for line in f:
+            tokens = line.split()
             list1.append(int(tokens[0]))
 
             t2 = int(tokens[1])
