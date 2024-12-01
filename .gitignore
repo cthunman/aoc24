@@ -1,3 +1,4 @@
 inputs
 .venv
 dist-newstyle
+*__pycache__
