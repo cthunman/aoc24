@@ -46,7 +46,6 @@ part2 pairs =
 
 runDay1 :: IO ()
 runDay1 = do
-  putStrLn "Starting Day 1..."
   input <- readInputFile
   if null input 
     then putStrLn "No input data!"
