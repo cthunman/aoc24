@@ -1,7 +1,7 @@
 def part1():
     list1 = []
     list2 = []
-    with open("day1/input/input.txt") as f:
+    with open("inputs/day1/input.txt") as f:
         for _ in range(1000):
             line = f.readline()
             tokens = line.split("   ")
@@ -19,7 +19,7 @@ def part1():
 def part2():
     list1 = []
     frequencies = {}
-    with open("day1/input/input.txt") as f:
+    with open("inputs/day1/input.txt") as f:
         for _ in range(1000):
             line = f.readline()
             tokens = line.split("   ")

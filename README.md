@@ -1,0 +1,1 @@
+Input files not included, but if you create an inputs folder and put subfolders `day1` `day2` etc, and put an `input.txt` file, and the code should run.
