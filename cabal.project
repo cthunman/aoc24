@@ -1,0 +1,8 @@
+packages: .
+
+package aoc24
+    ghc-options: -Wall
+                 -Wno-unused-imports
+
+program-options
+    ghc-options: -O2

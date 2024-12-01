@@ -1,0 +1,35 @@
+cabal-version:      2.4
+name:               aoc24
+version:            0.1.0.0
+
+-- A short (one-line) description of the package.
+synopsis: Advent of Code 2024
+
+-- A longer description of the package.
+-- description:
+
+-- A URL where users can report bugs.
+-- bug-reports:
+
+-- The license under which the package is released.
+license:            MIT
+author:             Carl Thunman
+maintainer:         thunman@gmail.com
+
+-- A copyright notice.
+-- copyright:
+-- category:
+extra-source-files:
+    CHANGELOG.md
+    README.md
+
+executable aoc24
+    main-is:          Main.hs
+    other-modules:    Day1.Haskell.Solution
+    default-extensions: 
+        ImportQualifiedPost
+    build-depends:    base ^>=4.17.2.1
+                    , containers
+    hs-source-dirs:   src/aoc24
+    default-language: Haskell2010
+    -- ghc-options:      -O2 -Wall -optl-Wl,-no_compact_unwind
