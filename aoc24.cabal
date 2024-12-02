@@ -19,7 +19,9 @@ extra-source-files:
 
 executable aoc24
     main-is:          Main.hs
-    other-modules:    Day1.Haskell.Solution
+    other-modules:    
+                    Day1.Haskell.Solution
+                    Day2.Haskell.Solution
     default-extensions: 
         ImportQualifiedPost
     build-depends:    base ^>=4.17.2.1

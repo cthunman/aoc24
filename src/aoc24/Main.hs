@@ -1,6 +1,7 @@
 module Main where
 
 import Day1.Haskell.Solution (runDay1)
+import Day2.Haskell.Solution (runDay2)
 import System.Environment (getArgs)
 
 main :: IO ()
@@ -17,6 +18,9 @@ main = do
     ["--day", "1"] -> do
       putStrLn "Day 1:"
       runDay1
+    ["--day", "2"] -> do
+      putStrLn "Day 2:"
+      runDay2
     ["--day", n] ->
       putStrLn $ "Day " ++ n ++ " not implemented yet"
     _ -> putStr usage
