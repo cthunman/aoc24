@@ -1,5 +1,5 @@
 import argparse
-from day1.python.solution import part1 as day1_part1, part2 as day1_part2
+from python.day1 import part1 as day1_part1, part2 as day1_part2
 
 
 def main():

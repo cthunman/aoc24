@@ -40,3 +40,4 @@ if __name__ == "__main__":
 
     p2 = part2()
     print(f"Part 2: {p2}")
+
