@@ -1,8 +1,8 @@
 module Main where
 
-import Day1.Haskell.Solution (runDay1)
-import Day2.Haskell.Solution (runDay2)
-import Day3.Haskell.Solution (runDay3)
+import qualified Haskell.Day1 as D1
+import qualified Haskell.Day2 as D2
+import qualified Haskell.Day3 as D3
 import System.Environment (getArgs)
 
 main :: IO ()
@@ -18,13 +18,13 @@ main = do
   case args of
     ["--day", "1"] -> do
       putStrLn "Day 1:"
-      runDay1
+      D1.runDay
     ["--day", "2"] -> do
       putStrLn "Day 2:"
-      runDay2
+      D2.runDay
     ["--day", "3"] -> do
       putStrLn "Day 3:"
-      runDay3
+      D3.runDay
     ["--day", n] ->
       putStrLn $ "Day " ++ n ++ " not implemented yet"
     _ -> putStr usage

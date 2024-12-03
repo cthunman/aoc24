@@ -19,7 +19,7 @@ extra-source-files:
 
 executable aoc24
     main-is:          Main.hs
-    other-modules:    
+    other-modules:    Haskell.Day1
                     Day1.Haskell.Solution
                     Day2.Haskell.Solution
                     Day3.Haskell.Solution

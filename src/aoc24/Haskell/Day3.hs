@@ -1,5 +1,5 @@
-module Day3.Haskell.Solution
-  ( runDay3,
+module Haskell.Day3
+  ( runDay,
   )
 where
 
@@ -44,8 +44,8 @@ findMultiplications (_ : xs) = findMultiplications xs
 sumMultiplications :: [(Int, Int)] -> Int
 sumMultiplications = sum . map (\(x, y) -> x * y)
 
-runDay3 :: IO ()
-runDay3 = do
+runDay :: IO ()
+runDay = do
   content <- readInputFile
   let p1 = sumMultiplications $ findMultiplications content
   let p2 = sumMultiplications $ doFindMultiplications content

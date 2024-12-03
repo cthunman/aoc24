@@ -1,5 +1,5 @@
-module Day2.Haskell.Solution
-  ( runDay2,
+module Haskell.Day2
+  ( runDay,
   )
 where
 
@@ -75,8 +75,8 @@ part2 =
             || isDecreasingDampenedSequenceFirst nums
       )
 
-runDay2 :: IO ()
-runDay2 = do
+runDay :: IO ()
+runDay = do
   input <- readInputFile
   if null input
     then putStrLn "No input data!"

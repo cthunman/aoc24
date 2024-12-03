@@ -1,5 +1,5 @@
-module Day1.Haskell.Solution
-  ( runDay1
+module Haskell.Day1
+  ( runDay
   )
 where
 
@@ -44,8 +44,8 @@ part2 pairs =
       freq1 = frequencies list2
    in sum $ map (\n1 -> n1 * Map.findWithDefault 0 n1 freq1) list1
 
-runDay1 :: IO ()
-runDay1 = do
+runDay :: IO ()
+runDay = do
   input <- readInputFile
   if null input 
     then putStrLn "No input data!"
