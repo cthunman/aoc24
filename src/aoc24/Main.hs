@@ -3,6 +3,7 @@ module Main where
 import qualified Haskell.Day1 as D1
 import qualified Haskell.Day2 as D2
 import qualified Haskell.Day3 as D3
+import qualified Haskell.Day4 as D4
 import System.Environment (getArgs)
 
 main :: IO ()
@@ -25,6 +26,9 @@ main = do
     ["--day", "3"] -> do
       putStrLn "Day 3:"
       D3.runDay
+    ["--day", "4"] -> do
+      putStrLn "Day 4:"
+      D4.runDay
     ["--day", n] ->
       putStrLn $ "Day " ++ n ++ " not implemented yet"
     _ -> putStr usage
