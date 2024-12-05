@@ -23,12 +23,14 @@ executable aoc24
                     Haskell.Day2
                     Haskell.Day3
                     Haskell.Day4
+                    Haskell.Day5
     default-extensions: 
         ImportQualifiedPost
     build-depends:    base ^>=4.17.2.1
                     , containers
                     , text
                     , array
+                    , split
     hs-source-dirs:   src/aoc24
     default-language: Haskell2010
     -- ghc-options:      -O2 -Wall -optl-Wl,-no_compact_unwind
