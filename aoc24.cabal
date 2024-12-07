@@ -24,6 +24,7 @@ executable aoc24
                     Haskell.Day3
                     Haskell.Day4
                     Haskell.Day5
+                    Haskell.Day6
     default-extensions: 
         ImportQualifiedPost
     build-depends:    base ^>=4.17.2.1
